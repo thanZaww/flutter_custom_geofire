@@ -2,7 +2,7 @@ group = "com.kimchimyay.flutter_custom_geofire"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    ext.kotlin_version = "1.8.22"
+    ext.kotlin_version = "2.0.20"
     repositories {
         google()
         mavenCentral()
@@ -52,6 +52,8 @@ android {
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
+        implementation 'com.google.firebase:firebase-database:20.0.5'
+        implementation 'com.google.firebase:firebase-core:21.1.1'
     }
 
     testOptions {
