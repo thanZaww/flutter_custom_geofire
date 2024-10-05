@@ -46,14 +46,12 @@ android {
     }
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
     }
 
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
-        implementation 'com.google.firebase:firebase-database:20.0.5'
-        implementation 'com.google.firebase:firebase-core:21.1.1'
     }
 
     testOptions {
@@ -66,10 +64,5 @@ android {
                showStandardStreams = true
             }
         }
-    }
-
-    dependencies {        
-        implementation 'com.google.firebase:firebase-database:20.0.5'
-        implementation 'com.google.firebase:firebase-core:21.1.1'
-    }
+    }    
 }
