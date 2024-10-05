@@ -34,7 +34,7 @@ abstract class FlutterCustomGeofirePlatform extends PlatformInterface {
     throw UnimplementedError('queryLocations() has not been implemented.');
   }
 
-  Future<void> initialize() {
+  Future<void> initialize(String node) {
     throw UnimplementedError('initialize() has not been implemented.');
   }
 

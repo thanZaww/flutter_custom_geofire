@@ -41,8 +41,8 @@ class MethodChannelFlutterCustomGeofire extends FlutterCustomGeofirePlatform {
   }
 
   @override
-  Future<void> initialize() async {
-    await _methodChannel.invokeMethod('initialize');
+  Future<void> initialize(String node) async {
+    await _methodChannel.invokeMethod('initialize', {'node': node});
   }
 
   @override

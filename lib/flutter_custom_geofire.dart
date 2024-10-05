@@ -4,6 +4,10 @@ class FlutterCustomGeofire {
   static FlutterCustomGeofirePlatform get _platform =>
       FlutterCustomGeofirePlatform.instance;
 
+  Future<void> initialize(String node) {
+    return _platform.initialize(node);
+  }
+
   Future<String?> getPlatformVersion() {
     return _platform.getPlatformVersion();
   }
@@ -19,10 +23,6 @@ class FlutterCustomGeofire {
   Future<void> queryLocations(
       double latitude, double longitude, double radiusInKm) {
     return _platform.queryLocations(latitude, longitude, radiusInKm);
-  }
-
-  Future<void> initialize() {
-    return _platform.initialize();
   }
 
   Future<void> removeLocation(String userId) {

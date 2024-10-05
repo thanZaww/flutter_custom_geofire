@@ -28,7 +28,7 @@ class MockFlutterCustomGeofirePlatform
   }
 
   @override
-  Future<void> initialize() {
+  Future<void> initialize(String node) {
     return Future.value();
   }
 
