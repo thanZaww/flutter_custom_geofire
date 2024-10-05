@@ -67,4 +67,9 @@ android {
             }
         }
     }
+
+    dependencies {        
+        implementation 'com.google.firebase:firebase-database:20.0.5'
+        implementation 'com.google.firebase:firebase-core:21.1.1'
+    }
 }
